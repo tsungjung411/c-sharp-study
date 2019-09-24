@@ -5,4 +5,9 @@
 
 ## 安裝軟體
 - [Ubuntu - Mono](https://www.mono-project.com/download/stable/#download-lin-ubuntu)
+  - 測試環境
+    ```bash
+    $ mono-csc --version
+    Mono C# compiler version 4.2.1.0
+    ```
   - [Hello World](https://www.mono-project.com/docs/getting-started/mono-basics/)
