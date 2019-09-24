@@ -11,3 +11,14 @@
     Mono C# compiler version 4.2.1.0
     ```
   - [Hello World](https://www.mono-project.com/docs/getting-started/mono-basics/)
+    ```csharp
+    using System;
+
+    public class HelloWorld
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine ("Hello Mono World");
+        }
+    }
+  ```
