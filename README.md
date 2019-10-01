@@ -22,6 +22,13 @@
         }
     }
   ```
+  
+## 線上寫程式
+- [rextester](https://rextester.com/l/csharp_online_compiler)
+
+## 語法學習
+- [String.Format Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netframework-4.8#Starting)
+
 - 跟 java 的差別
   - 匯入套件：import(java) v.s. using(C#)
   - 入口點：main(java) v.s. Main(C#)
