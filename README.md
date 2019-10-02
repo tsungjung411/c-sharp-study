@@ -27,6 +27,7 @@
 - [rextester](https://rextester.com/l/csharp_online_compiler)
 
 ## 語法學習
+- [型別與變數](https://docs.microsoft.com/zh-tw/dotnet/csharp/tour-of-csharp/types-and-variables)
 - [String.Format Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netframework-4.8#Starting)
 
 ## 比較差異
