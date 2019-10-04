@@ -27,8 +27,11 @@
 - [rextester](https://rextester.com/l/csharp_online_compiler)
 
 ## 語法學習
-- [[官網] C# 語言教學課程](https://docs.microsoft.com/zh-tw/dotnet/csharp/tour-of-csharp/)
+- [[官網] C# 語言教學課程](https://docs.microsoft.com/zh-tw/dotnet/csharp/tour-of-csharp/) - 導覽(簡介)
    - [型別與變數](https://docs.microsoft.com/zh-tw/dotnet/csharp/tour-of-csharp/types-and-variables)
+- [[官網] C# 語言教學課程](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/) - 程式設計手冊(詳細)
+   - [類型](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/types/)
+     - [作法：將字串轉換為數值 (C# 程式設計指南)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number)
 - [String.Format Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netframework-4.8#Starting)
 
 ## 比較差異
