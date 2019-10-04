@@ -32,7 +32,12 @@
 - [[官網] C# 語言教學課程](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/) - 程式設計手冊(詳細)
    - [類型](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/types/)
      - [作法：將字串轉換為數值 (C# 程式設計指南)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number)
-- [String.Format Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netframework-4.8#Starting)
+
+## 主題學習
+- 標準輸出
+  - [[dotnet] String.Format Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netframework-4.8#Starting)
+  - [[dotnet] 複合格式](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/composite-formatting)
+  - [$-字串插補C#](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/tokens/interpolated?view=netframework-4.8)
 
 ## 比較差異
 - 跟 java 的差別
