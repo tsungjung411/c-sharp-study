@@ -37,6 +37,9 @@
 - 標準輸入
   - [How to read Two numbers in c#](https://stackoverflow.com/questions/27589159/how-to-read-two-numbers-in-c-sharp)
     - ['System.Array' does not contain a definition for 'Select' and no extension method 'Select'](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f62a3690-702a-4e92-a076-9d50d4a334c0)
+      ```C#
+      import Sytem.Linq;
+      ```
 - 標準輸出
   - [[dotnet] String.Format Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netframework-4.8#Starting)
   - [[dotnet] 複合格式](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/composite-formatting)
@@ -46,6 +49,8 @@
   - [[C#]擴充方法 – 介紹](https://kw0006667.wordpress.com/2013/05/29/c%E6%93%B4%E5%85%85%E6%96%B9%E6%B3%95-%E4%BB%8B%E7%B4%B9/)
 - 數學(Math)
   - [Is there an exponent operator in C#?](https://stackoverflow.com/questions/3034604/is-there-an-exponent-operator-in-c)
+- 語言整合查詢(LINQ)
+  - [[wiki] 語言整合查詢(LINQ)](https://zh.wikipedia.org/wiki/%E8%AF%AD%E8%A8%80%E9%9B%86%E6%88%90%E6%9F%A5%E8%AF%A2)
 
 ## 比較差異
 - 跟 java 的差別
