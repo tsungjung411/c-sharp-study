@@ -44,6 +44,8 @@
   - [[dotnet] 標準數值格式字串](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/standard-numeric-format-strings)
 - 擴充方法
   - [[C#]擴充方法 – 介紹](https://kw0006667.wordpress.com/2013/05/29/c%E6%93%B4%E5%85%85%E6%96%B9%E6%B3%95-%E4%BB%8B%E7%B4%B9/)
+- 數學(Math)
+  - [Is there an exponent operator in C#?](https://stackoverflow.com/questions/3034604/is-there-an-exponent-operator-in-c)
 
 ## 比較差異
 - 跟 java 的差別
