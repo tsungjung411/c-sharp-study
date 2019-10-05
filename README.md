@@ -57,6 +57,7 @@
     Console.WriteLine("pi = " + pi.ToString("F3"));
     Console.WriteLine("pi = " + pi.ToString("0.000"));
     Console.WriteLine("pi = " + pi.ToString("#0.000"));
+    Console.WriteLine("leading zero: " + 123.ToString("D8")); // width:8
     ```
 - 擴充方法
   - [[C#]擴充方法 – 介紹](https://kw0006667.wordpress.com/2013/05/29/c%E6%93%B4%E5%85%85%E6%96%B9%E6%B3%95-%E4%BB%8B%E7%B4%B9/)
