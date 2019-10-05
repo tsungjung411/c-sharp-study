@@ -4,7 +4,7 @@
 - [TQC+ C# 認證教學手冊](https://tqcplus-csharp-ebook.readbook.tw/)
 
 ## 安裝軟體
-- [Ubuntu - Mono](https://www.mono-project.com/download/stable/#download-lin-ubuntu)
+- ### [Ubuntu - Mono](https://www.mono-project.com/download/stable/#download-lin-ubuntu)
   - 測試環境
     ```bash
     $ mono-csc --version
@@ -22,9 +22,8 @@
         }
     }
   ```
-  
-## 線上寫程式
-- [rextester](https://rextester.com/l/csharp_online_compiler)
+- ### 線上寫程式
+  - [rextester](https://rextester.com/l/csharp_online_compiler)
 
 ## 語法學習
 - [[官網] C# 語言教學課程](https://docs.microsoft.com/zh-tw/dotnet/csharp/tour-of-csharp/) - 導覽(簡介)
