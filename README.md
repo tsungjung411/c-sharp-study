@@ -46,21 +46,23 @@
   - 數值處理
     - [[dotnet] 標準數值格式字串](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/standard-numeric-format-strings)
     - [[dotnet] 作法：以前置字元零來填補數字](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros)
-  - 範例
-    ```c#
-    var pi = 3.14159265;
-    Console.WriteLine("pi = {0}", pi);
-    Console.WriteLine("pi = {0:0.000}", pi);
-    Console.WriteLine("pi = {0,-10:0.000}", pi);
-    Console.WriteLine("pi = {0,10:0.000}", pi);
-    Console.WriteLine("pi = {0:F3}", pi);
-    Console.WriteLine("pi = {0,10:F3}", pi);
-    Console.WriteLine("pi = {0,-10:F3}", pi);
-    Console.WriteLine("pi = " + pi.ToString("F3"));
-    Console.WriteLine("pi = " + pi.ToString("0.000"));
-    Console.WriteLine("pi = " + pi.ToString("#0.000"));
-    Console.WriteLine("leading zero: " + 123.ToString("D8")); // width:8
-    ```
+    - 範例
+      ```c#
+      var pi = 3.14159265;
+      Console.WriteLine("pi = {0}", pi);
+      Console.WriteLine("pi = {0:0.000}", pi);
+      Console.WriteLine("pi = {0,-10:0.000}", pi);
+      Console.WriteLine("pi = {0,10:0.000}", pi);
+      Console.WriteLine("pi = {0:F3}", pi);
+      Console.WriteLine("pi = {0,10:F3}", pi);
+      Console.WriteLine("pi = {0,-10:F3}", pi);
+      Console.WriteLine("pi = " + pi.ToString("F3"));
+      Console.WriteLine("pi = " + pi.ToString("0.000"));
+      Console.WriteLine("pi = " + pi.ToString("#0.000"));
+      Console.WriteLine("leading zero: " + 123.ToString("D8")); // width:8
+      ```
+  - 字元
+    - [C# String Chars (Get Char at Index)](https://www.dotnetperls.com/string-char)
 - 擴充方法
   - [[C#]擴充方法 – 介紹](https://kw0006667.wordpress.com/2013/05/29/c%E6%93%B4%E5%85%85%E6%96%B9%E6%B3%95-%E4%BB%8B%E7%B4%B9/)
 - 數學(Math)
