@@ -64,6 +64,8 @@
       Console.WriteLine("pi = " + pi.ToString("#0.000"));
       Console.WriteLine("leading zero: " + 123.ToString("D8")); // width:8
       ```
+- 字串
+  - [Add, Remove, Replace String In C#](https://www.c-sharpcorner.com/UploadFile/mahesh/add-remove-replace-strings-in-C-Sharp/)
   - 字元
     - [C# String Chars (Get Char at Index)](https://www.dotnetperls.com/string-char)
 - 擴充方法
