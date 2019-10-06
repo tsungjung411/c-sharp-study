@@ -4,6 +4,7 @@
 - [TQC+ C# 認證教學手冊](https://tqcplus-csharp-ebook.readbook.tw/)
 
 ## 安裝軟體
+- ### [C# 語言版本控制](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/configure-language-version)
 - ### [Ubuntu - Mono](https://www.mono-project.com/download/stable/#download-lin-ubuntu)
   - 測試環境
     ```bash
