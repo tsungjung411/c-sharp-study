@@ -39,7 +39,9 @@
      - [作法：將字串轉換為數值 (C# 程式設計指南)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number)
 
 ## 主題學習
-- [[dotnet] C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+- C# 編碼慣例
+  - [[dotnet] C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+  - [[dotnet]C# 編碼慣例](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
 - 標準輸入
   - [How to read Two numbers in c#](https://stackoverflow.com/questions/27589159/how-to-read-two-numbers-in-c-sharp)
     - ['System.Array' does not contain a definition for 'Select' and no extension method 'Select'](https://social.msdn.microsoft.com/Forums/vstudio/en-US/f62a3690-702a-4e92-a076-9d50d4a334c0)
