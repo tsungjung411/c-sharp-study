@@ -26,6 +26,7 @@
   - csc.exe 預設是在C:\Windows\Microsoft.NET\Framework\v3.5 (3.5 表示版本資訊)
   - [C#編譯](https://dotblogs.com.tw/eternaltung/2010/01/07/12890)
   - [利用指令工具編譯及執行 C# 程式](https://tqcplus-csharp-ebook.readbook.tw/csharp-and-tools.html)
+- ### [使用 Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
 - ### 線上寫程式
   - [rextester](https://rextester.com/l/csharp_online_compiler)
 
