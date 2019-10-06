@@ -22,6 +22,10 @@
         }
     }
     ```
+- ### [Windows] .Net Framework 環境
+  - csc.exe 預設是在C:\Windows\Microsoft.NET\Framework\vx.x
+  - [C#編譯](https://dotblogs.com.tw/eternaltung/2010/01/07/12890)
+  - [利用指令工具編譯及執行 C# 程式](https://tqcplus-csharp-ebook.readbook.tw/csharp-and-tools.html)
 - ### 線上寫程式
   - [rextester](https://rextester.com/l/csharp_online_compiler)
 
