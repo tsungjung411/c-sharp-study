@@ -42,7 +42,10 @@
 - 標準輸出
   - [[dotnet] String.Format Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netframework-4.8#Starting)
   - [[dotnet] 複合格式](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/composite-formatting)
-  - [$-字串插補C#](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/tokens/interpolated?view=netframework-4.8)
+  - 字串插補
+    - 功能同 String.Format()，但改用運算式表達
+      - 原因：[What's with the dollar sign ($“string”) ](https://stackoverflow.com/questions/32878549/whats-with-the-dollar-sign-string)
+    - [[dotnet] $-字串插補C#](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/tokens/interpolated?view=netframework-4.8)
   - 數值處理
     - [[dotnet] 標準數值格式字串](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/standard-numeric-format-strings)
     - [[dotnet] 作法：以前置字元零來填補數字](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros)
