@@ -87,6 +87,8 @@
   - [[wiki] 語言整合查詢(LINQ)](https://zh.wikipedia.org/wiki/%E8%AF%AD%E8%A8%80%E9%9B%86%E6%88%90%E6%9F%A5%E8%AF%A2)
 - 例外處理
   - [[dotnet] 例外狀況的最佳做法](https://docs.microsoft.com/zh-tw/dotnet/standard/exceptions/best-practices-for-exceptions)
+- 多維度陣列
+  - [[csharp] 多維陣列 (C# 程式設計手冊)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/arrays/multidimensional-arrays)
 
 ## 比較差異
 - 跟 java 的差別
