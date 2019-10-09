@@ -72,6 +72,7 @@
       Console.WriteLine("pi = " + pi.ToString("0.000"));
       Console.WriteLine("pi = " + pi.ToString("#0.000"));
       Console.WriteLine("leading zero: " + 123.ToString("D8")); // width:8
+      Console.WriteLine("{0:#,###}", 123456789);
       ```
 - 字串
   - [Add, Remove, Replace String In C#](https://www.c-sharpcorner.com/UploadFile/mahesh/add-remove-replace-strings-in-C-Sharp/)
