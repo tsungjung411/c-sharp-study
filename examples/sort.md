@@ -87,18 +87,18 @@ namespace Rextester
             Person p;
             
             list.Add(new Person("TJ_Tsai", 62));
-            list.Add(new Person("John", 65));
-            list.Add(new Person("David", 61));
-            list.Add(new Person("TV", 100));
+            list.Add(new Person("John",    65));
+            list.Add(new Person("David",   61));
+            list.Add(new Person("TV",      100));
             list.Sort();
             list.ForEach(Console.WriteLine);
             Console.WriteLine("==========================");
             
             Person[] persons = new Person[] {
                 new Person() {Name = "TJ_Tsai", Weight = 62},
-                new Person() {Name = "John", Weight = 65},
-                new Person() {Name = "David", Weight = 61},
-                new Person() {Name = "TV", Weight = 100},
+                new Person() {Name = "John",    Weight = 65},
+                new Person   {Name = "David",   Weight = 61},
+                new Person   {Name = "TV",      Weight = 100},
             };
             
             // sorted by default
