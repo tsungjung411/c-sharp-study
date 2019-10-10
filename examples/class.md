@@ -37,6 +37,10 @@ namespace Rextester
             Console.WriteLine(p1.ToString());
             
             // the constructor takes 0 arguments
+            // 這樣的用法，有極大的好處
+            // 如果參數有數個以上，有些要設定，有些要用預設的
+            // 這樣子所產生出來的建構子組合很多
+            // 且會讓程式碼變複雜，不好管理
             Person p2 = new Person {Name = "TJ_Tsai", Weight = 62};
             Console.WriteLine(p2.ToString());
         }
