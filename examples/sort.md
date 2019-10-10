@@ -45,6 +45,7 @@ namespace Rextester
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Rextester
 {
@@ -91,6 +92,7 @@ namespace Rextester
             list.Add(new Person("TV", 100));
             list.Sort();
             list.ForEach(Console.WriteLine);
+            Console.WriteLine("==========================");
             
             Person[] persons = new Person[] {
                 new Person() {Name = "TJ_Tsai", Weight = 62},
@@ -98,8 +100,20 @@ namespace Rextester
                 new Person() {Name = "David", Weight = 61},
                 new Person() {Name = "TV", Weight = 100},
             };
+            
+            // sorted by default
             Array.Sort(persons);
-            list.ForEach(Console.WriteLine);
+            // ToList() is defined in Linq
+            persons.ToList().ForEach(Console.WriteLine);
+            Console.WriteLine("==========================");
+            
+            // sorted by Name
+            Array.Sort(persons, delegate(Person p1, Person p2) {
+                return p1.Name.CompareTo(p2.Name);
+            });
+            // ToList() is defined in Linq
+            persons.ToList().ForEach(Console.WriteLine);
+            Console.WriteLine("==========================");
         }
     }
 }
