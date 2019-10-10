@@ -1,3 +1,4 @@
+## 建立基本類別
 ```C#
 // https://rextester.com/l/csharp_online_compiler
 // Rextester.Program.Main is the entry point for your code. Don't change it.
@@ -10,10 +11,15 @@ namespace Rextester
 {
     public class Person
     {
+        public Person()
+        {
+            Console.WriteLine("Person() is called");
+        }
         public Person(string name, int weight)
         {
             this.Name = name;
             this.Weight = weight;
+            Console.WriteLine("Person(string, int) is called");
         }
         public string Name { get; set;}
         public int Weight { get; set;}
@@ -27,8 +33,12 @@ namespace Rextester
     {
         public static void Main(string[] args)
         {
-            Person p = new Person("TJ_Tsai", 62);
-            Console.WriteLine(p.ToString());
+            Person p1 = new Person("TJ_Tsai", 62);
+            Console.WriteLine(p1.ToString());
+            
+            // the constructor takes 0 arguments
+            Person p2 = new Person {Name = "TJ_Tsai", Weight = 62};
+            Console.WriteLine(p2.ToString());
         }
     }
 }
