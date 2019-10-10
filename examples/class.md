@@ -34,5 +34,13 @@ namespace Rextester
 }
 ```
 
+## 比較物件和類別的關係
+- java: ```object instanceof Person```
+- C#: ```object is Person```
+
+## 物件轉型
+- java: ```((Person) object).xxx```
+- C#: ```(object as Person).Xxx```
+
 ## 參考資料
 - [[csharp] 類別 (C# 程式設計手冊)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/classes)
