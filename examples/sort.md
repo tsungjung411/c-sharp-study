@@ -50,20 +50,30 @@ namespace Rextester
 {
     public class Person: IComparable
     {
+        public Person()
+        {
+        }
         public Person(string name, int weight)
         {
-            Name = name;
-            Weight = weight;
+            this.Name = name;
+            this.Weight = weight;
         }
         public string Name { get; set;}
         public int Weight { get; set;}
         public int CompareTo(object another)
         {
-            return Weight - ((Person) another).Weight;
+            if (another is Person)
+            {
+                return this.Weight.CompareTo((another as Person).Weight);
+            }
+            else
+            {
+                throw new ArgumentException("object is not Person");
+            }
         }
         public override string ToString()
         {
-            return Name + ": " + Weight + "(kg)";
+            return this.Name + ": " + this.Weight + "(kg)";
         }
     }
     
@@ -80,6 +90,15 @@ namespace Rextester
             list.Add(new Person("David", 61));
             list.Add(new Person("TV", 100));
             list.Sort();
+            list.ForEach(Console.WriteLine);
+            
+            Person[] persons = new Person[] {
+                new Person() {Name = "TJ_Tsai", Weight = 62},
+                new Person() {Name = "John", Weight = 65},
+                new Person() {Name = "David", Weight = 61},
+                new Person() {Name = "TV", Weight = 100},
+            };
+            Array.Sort(persons);
             list.ForEach(Console.WriteLine);
         }
     }
