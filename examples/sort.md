@@ -1,4 +1,4 @@
-
+## Primitive types
 ```C#
 // https://rextester.com/l/csharp_online_compiler
 // Rextester.Program.Main is the entry point for your code. Don't change it.
@@ -32,6 +32,55 @@ namespace Rextester
         private static void Print(int x)
         {
             Console.WriteLine("Print: x: " + x);
+        }
+    }
+}
+```
+
+## Class types
+```C#
+// https://rextester.com/l/csharp_online_compiler
+// Rextester.Program.Main is the entry point for your code. Don't change it.
+// Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
+
+using System;
+using System.Collections.Generic;
+
+namespace Rextester
+{
+    public class Person: IComparable
+    {
+        public Person(string name, int weight)
+        {
+            Name = name;
+            Weight = weight;
+        }
+        public string Name { get; set;}
+        public int Weight { get; set;}
+        public int CompareTo(object another)
+        {
+            return Weight - ((Person) another).Weight;
+        }
+        public override string ToString()
+        {
+            return Name + ": " + Weight + "(kg)";
+        }
+    }
+    
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            // defined in System.Collections.Generic
+            List<Person> list = new List<Person>();
+            Person p;
+            
+            list.Add(new Person("TJ_Tsai", 62));
+            list.Add(new Person("John", 65));
+            list.Add(new Person("David", 61));
+            list.Add(new Person("TV", 100));
+            list.Sort();
+            list.ForEach(Console.WriteLine);
         }
     }
 }
