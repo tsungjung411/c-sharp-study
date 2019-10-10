@@ -16,9 +16,10 @@ namespace Rextester
             int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
             
             // sum event numbers
-            nums = nums.Where(x => x % 2 == 0).ToArray(); 
+            nums = nums.Where(x => x % 2 == 0).ToArray(); // Where(): in Linq
             Console.Write(String.Join(" + ", nums));
-            Console.WriteLine(" = " + nums.Sum());
+            Console.WriteLine(" = " + nums.Sum()); // Sum(): in Linq
+            Console.WriteLine("average = " + nums.Average()); // Average(): in Linq
         }
     }
 }
