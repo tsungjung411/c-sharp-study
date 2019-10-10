@@ -16,6 +16,11 @@ namespace Rextester
             int[] nums = {8,4,5,1,7,2,9,6,3,0};
             Array.Sort(nums);
             
+            foreach (int num in nums)
+            {
+                Console.WriteLine("num: " + num);
+            }
+            
             // the extension is from Linq
             nums.ToList().ForEach(Print);
             nums.ToList().ForEach(Console.WriteLine);
