@@ -77,6 +77,7 @@
 - 字串
   - [Add, Remove, Replace String In C#](https://www.c-sharpcorner.com/UploadFile/mahesh/add-remove-replace-strings-in-C-Sharp/)
   - [@ -- 逐字識別項](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/tokens/verbatim?view=netframework-4.8)
+  - [如何：在 C# 比較字串](https://docs.microsoft.com/zh-tw/dotnet/csharp/how-to/compare-strings)
   - 字元
     - [C# String Chars (Get Char at Index)](https://www.dotnetperls.com/string-char)
 - 擴充方法
