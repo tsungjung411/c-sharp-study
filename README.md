@@ -90,6 +90,9 @@
   - [[dotnet] 例外狀況的最佳做法](https://docs.microsoft.com/zh-tw/dotnet/standard/exceptions/best-practices-for-exceptions)
 - 多維度陣列
   - [[csharp] 多維陣列 (C# 程式設計手冊)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/arrays/multidimensional-arrays)
+- 時間
+  - [how can i get the current time in C#?](https://stackoverflow.com/questions/10374089/how-can-i-get-the-current-time-in-c)
+  - [[dotnet] DateTime.Now Property](https://docs.microsoft.com/zh-tw/dotnet/api/system.datetime.now?view=netframework-4.8)
 
 ## 比較差異
 - 跟 java 的差別
