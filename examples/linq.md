@@ -19,7 +19,8 @@ namespace Rextester
             nums = nums.Where(x => x % 2 == 0).ToArray(); // Where(): in Linq
             Console.Write(String.Join(" + ", nums));
             Console.WriteLine(" = " + nums.Sum()); // Sum(): in Linq
-            Console.WriteLine("average = " + nums.Average()); // Average(): in Linq
+            Console.WriteLine("Average = " + nums.Average()); // Average(): in Linq
+            Console.WriteLine("Count = " + nums.Count());
         }
     }
 }
