@@ -19,10 +19,10 @@ namespace Rextester
     
     public class Program
     {
-        delegate double Function(double a);
+        delegate double Function(double x);
         
-        public static double Square(double a) {
-            return a * a;
+        public static double Square(double x) {
+            return x * x;
         }
         static double[] Apply(double[] a, Function f) {
             double[] results = new double[a.Length];
