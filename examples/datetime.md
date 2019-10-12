@@ -1,3 +1,14 @@
+## 時間格式
+- [自訂日期與時間格式字串](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/custom-date-and-time-format-strings)
+  - "d"	月份天數，從 1 到 31。
+  - "dd"	月份天數，從 01 到 31。
+  - "ddd"	星期幾的縮寫名稱。(如：週一、週二、...、週日)
+  - "dddd"	星期幾的完整名稱。(如：星期一、星期二、...、星期日)
+  - "h"	採用 12 小時制的小時，從 1 到 12。
+  - "hh"	採用 12 小時制的小時，從 01 到 12。
+  - "H"	採用 24 小時制的小時，從 0 到 23。
+  - "HH"	採用 24 小時制的小時，從 00 到 23。
+
 ## Now to string
 ```
 //https://rextester.com/l/csharp_online_compiler
