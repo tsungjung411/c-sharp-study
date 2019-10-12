@@ -75,6 +75,7 @@ week: Saturday
 
 ## Week
 ```
+//https://rextester.com/l/csharp_online_compiler
 //Rextester.Program.Main is the entry point for your code. Don't change it.
 //Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
 
@@ -97,10 +98,22 @@ namespace Rextester
             Console.WriteLine();
             Console.WriteLine("week: " + dt.DayOfWeek);
             Console.WriteLine("week(type): " + dt.DayOfWeek.GetType());
-            Console.WriteLine("week(current): " + CultureInfo.CurrentCulture.DateTimeFormat.GetDayName(dt.DayOfWeek));
-            Console.WriteLine("week(current): ddd(dddd): " + dt.ToString("ddd (dddd)"));
-            Console.WriteLine("week(zh-tw): " + new CultureInfo("zh-tw").DateTimeFormat.GetDayName(dt.DayOfWeek));
-            Console.WriteLine("week(ja-jp): " + new CultureInfo("ja-jp").DateTimeFormat.GetDayName(dt.DayOfWeek));
+            Console.WriteLine("week(Invariant): ddd(dddd): " + dt.ToString("ddd (dddd)"));
+            
+            CultureInfo currentInfo = CultureInfo.CurrentCulture;
+            Console.WriteLine("week(current): " + currentInfo.DateTimeFormat.GetDayName(dt.DayOfWeek));
+            Console.WriteLine("week(current): " + currentInfo.DateTimeFormat.GetShortestDayName(dt.DayOfWeek));
+            Console.WriteLine("week(current): " + currentInfo.DateTimeFormat.GetAbbreviatedDayName(dt.DayOfWeek));
+            
+            CultureInfo twInfo = new CultureInfo("zh-tw");
+            Console.WriteLine("week(twInfo): " + twInfo.DateTimeFormat.GetDayName(dt.DayOfWeek));
+            Console.WriteLine("week(twInfo): " + twInfo.DateTimeFormat.GetShortestDayName(dt.DayOfWeek));
+            Console.WriteLine("week(twInfo): " + twInfo.DateTimeFormat.GetAbbreviatedDayName(dt.DayOfWeek));
+            
+            CultureInfo jpInfo = new CultureInfo("ja-jp");
+            Console.WriteLine("week(jpInfo): " + jpInfo.DateTimeFormat.GetDayName(dt.DayOfWeek));
+            Console.WriteLine("week(jpInfo): " + jpInfo.DateTimeFormat.GetShortestDayName(dt.DayOfWeek));
+            Console.WriteLine("week(jpInfo): " + jpInfo.DateTimeFormat.GetAbbreviatedDayName(dt.DayOfWeek));
         }
     }
 }
@@ -116,9 +129,18 @@ day: 12
 
 week: Saturday
 week(type): System.DayOfWeek
+week(Invariant): ddd(dddd): Sa (Samstag)
 week(current): Samstag
-week(zh-tw): 星期六
-week(ja-jp): 土曜日
+week(current): Sa
+week(current): Sa
+
+week(twInfo): 星期六
+week(twInfo): 六
+week(twInfo): 週六
+
+week(jpInfo): 土曜日
+week(jpInfo): 土
+week(jpInfo): 土
 ```
 
 <br>
