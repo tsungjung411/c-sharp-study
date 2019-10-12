@@ -1,5 +1,5 @@
 ## 時間格式
-- [自訂日期與時間格式字串](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/custom-date-and-time-format-strings)
+- [[dotnet] 自訂日期與時間格式字串](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/custom-date-and-time-format-strings)
   - "d"	月份天數，從 1 到 31。
   - "dd"	月份天數，從 01 到 31。
   - "ddd"	星期幾的縮寫名稱。(如：週一、週二、...、週日)
@@ -10,7 +10,7 @@
   - "HH"	採用 24 小時制的小時，從 00 到 23。
 
 ## Now to string
-```
+```C#
 //https://rextester.com/l/csharp_online_compiler
 //Rextester.Program.Main is the entry point for your code. Don't change it.
 //Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
@@ -46,7 +46,7 @@ week(ddd / dddd): Sa (Samstag)
 <br>
 
 ## "19840411" to DateTime
-```
+```C#
 //Rextester.Program.Main is the entry point for your code. Don't change it.
 //Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
 
@@ -85,7 +85,7 @@ week: Saturday
 <br>
 
 ## Week
-```
+```C#
 //https://rextester.com/l/csharp_online_compiler
 //Rextester.Program.Main is the entry point for your code. Don't change it.
 //Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
@@ -152,6 +152,51 @@ week(twInfo): 週六
 week(jpInfo): 土曜日
 week(jpInfo): 土
 week(jpInfo): 土
+```
+
+<br>
+
+## System.TimeSpan
+```C#
+//https://rextester.com/l/csharp_online_compiler
+//Rextester.Program.Main is the entry point for your code. Don't change it.
+//Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
+
+using System;
+using System.Globalization;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            DateTime dt1 = DateTime.ParseExact(
+                "20191010", "yyyyMMdd", 
+                CultureInfo.InvariantCulture);
+            DateTime dt2 = DateTime.ParseExact(
+                "20191012", "yyyyMMdd", 
+                CultureInfo.InvariantCulture);
+            
+            Console.WriteLine("diff: type: {0}", (dt2 - dt1).GetType());
+            Console.WriteLine("diff: duration: {0}", (dt2 - dt1).Duration());
+            Console.WriteLine("diff: days: {0} days", (dt2 - dt1).Days);
+            Console.WriteLine("diff: hours: {0}", (dt2 - dt1).Hours);
+            Console.WriteLine("diff: minutes: {0}", (dt2 - dt1).Minutes);
+            Console.WriteLine("diff: seconds: {0}", (dt2 - dt1).Seconds);
+        }
+    }
+}
+```
+
+執行結果：
+```
+diff: type: System.TimeSpan
+diff: days: 2 days
+diff: duration: 2.00:00:00
+diff: hours: 0
+diff: minutes: 0
+diff: seconds: 0
 ```
 
 <br>
