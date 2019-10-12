@@ -184,6 +184,7 @@ namespace Rextester
             Console.WriteLine("diff: hours: {0}", (dt2 - dt1).Hours);
             Console.WriteLine("diff: minutes: {0}", (dt2 - dt1).Minutes);
             Console.WriteLine("diff: seconds: {0}", (dt2 - dt1).Seconds);
+            Console.WriteLine("dt2 > dt1: {0}", dt2 > dt1);
         }
     }
 }
@@ -197,6 +198,7 @@ diff: duration: 2.00:00:00
 diff: hours: 0
 diff: minutes: 0
 diff: seconds: 0
+dt2 > dt1: True
 ```
 
 <br>
