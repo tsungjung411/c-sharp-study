@@ -70,6 +70,54 @@ week: Saturday
 
 <br>
 
+## Week
+```
+//Rextester.Program.Main is the entry point for your code. Don't change it.
+//Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
+
+using System;
+using System.Globalization;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            DateTime dt = DateTime.ParseExact(
+                "20191012", "yyyyMMdd", 
+                CultureInfo.InvariantCulture);
+            
+            Console.WriteLine("year: " + dt.Year);
+            Console.WriteLine("month: " + dt.Month);
+            Console.WriteLine("day: " + dt.Day);
+            Console.WriteLine();
+            Console.WriteLine("week: " + dt.DayOfWeek);
+            Console.WriteLine("week(type): " + dt.DayOfWeek.GetType());
+            Console.WriteLine("week(current): " + CultureInfo.CurrentCulture.DateTimeFormat.GetDayName(dt.DayOfWeek));
+            Console.WriteLine("week(zh-tw): " + new CultureInfo("zh-tw").DateTimeFormat.GetDayName(dt.DayOfWeek));
+            Console.WriteLine("week(ja-jp): " + new CultureInfo("ja-jp").DateTimeFormat.GetDayName(dt.DayOfWeek));
+        }
+    }
+}
+```
+ - [【.NET】利用 CultureInfo 取得各語系星期顯示名稱](https://dotblogs.com.tw/echo/2016/10/16/dotnet_dayofweek_displaybycultureinfo)
+
+執行結果：
+```
+year: 2019
+month: 10
+day: 12
+
+week: Saturday
+week(type): System.DayOfWeek
+week(current): Samstag
+week(zh-tw): 星期六
+week(ja-jp): 土曜日
+```
+
+<br>
+
 ## 參考資料
 - [how can i get the current time in C#? ](https://stackoverflow.com/questions/10374089/how-can-i-get-the-current-time-in-c)
 - [Parse string to DateTime in C#](https://stackoverflow.com/questions/5366285/parse-string-to-datetime-in-c-sharp)
