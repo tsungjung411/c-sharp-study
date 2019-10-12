@@ -66,10 +66,8 @@ namespace Rextester
             Console.WriteLine("GetType: " + DateTime.Now.GetType());
             Console.WriteLine("Ticks: " + DateTime.Now.Ticks);
             
-            DateTime startDate = DateTime.ParseExact(
-                "20191010", "yyyyMMdd", CultureInfo.InvariantCulture);
-            DateTime endDate = DateTime.ParseExact(
-                "20191011", "yyyyMMdd", CultureInfo.InvariantCulture);
+            DateTime startDate = new DateTime(2019, 10, 10);
+            DateTime endDate = new DateTime(2019, 10, 11);
             Int64 diff = (endDate.Ticks - startDate.Ticks) / TimeSpan.TicksPerSecond;
             Console.WriteLine("startDate.Ticks: " + startDate.Ticks);
             Console.WriteLine("endDate.Ticks = " + endDate.Ticks);
