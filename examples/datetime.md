@@ -9,6 +9,8 @@
   - "H"	採用 24 小時制的小時，從 0 到 23。
   - "HH"	採用 24 小時制的小時，從 00 到 23。
 
+<br>
+
 ## Now to string
 ```C#
 //https://rextester.com/l/csharp_online_compiler
@@ -41,6 +43,51 @@ Now: 12.10.2019 08:08:11
 GetType: System.DateTime
 yyyy-MM-dd HH:mm: 2019-10-12 08:59
 week(ddd / dddd): Sa (Samstag)
+```
+
+<br>
+
+## Now to integer
+```C#
+//https://rextester.com/l/csharp_online_compiler
+//Rextester.Program.Main is the entry point for your code. Don't change it.
+//Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
+
+using System;
+using System.Globalization;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Now: " + DateTime.Now);
+            Console.WriteLine("GetType: " + DateTime.Now.GetType());
+            Console.WriteLine("Ticks: " + DateTime.Now.Ticks);
+            
+            DateTime startDate = DateTime.ParseExact(
+                "20191010", "yyyyMMdd", CultureInfo.InvariantCulture);
+            DateTime endDate = DateTime.ParseExact(
+                "20191011", "yyyyMMdd", CultureInfo.InvariantCulture);
+            Int64 diff = (endDate.Ticks - startDate.Ticks) / TimeSpan.TicksPerSecond;
+            Console.WriteLine("startDate.Ticks: " + startDate.Ticks);
+            Console.WriteLine("endDate.Ticks = " + endDate.Ticks);
+            Console.WriteLine("endDate - startDate = " + diff + " (sec.)");
+        }
+    }
+}
+```
+- [Get time in milliseconds using C#](https://stackoverflow.com/questions/4016483/get-time-in-milliseconds-using-c-sharp)
+
+執行結果：
+```
+Now: 12.10.2019 15:05:39
+GetType: System.DateTime
+Ticks: 637064895390111331
+startDate.Ticks: 637062624000000000
+endDate.Ticks = 637063488000000000
+endDate - startDate = 86400 (sec.)
 ```
 
 <br>
