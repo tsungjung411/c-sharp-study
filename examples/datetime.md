@@ -17,7 +17,7 @@ namespace Rextester
             Console.WriteLine("yyyy-MM-dd HH:mm: "
                               + DateTime.Now.ToString("yyyy-MM-dd HH:mm"));
             Console.WriteLine("week(ddd / dddd): "
-                              + DateTime.Now.ToString("ddd / dddd"));
+                              + DateTime.Now.ToString("ddd (dddd)"));
         }
     }
 }
@@ -29,7 +29,7 @@ namespace Rextester
 Now: 12.10.2019 08:08:11
 GetType: System.DateTime
 yyyy-MM-dd HH:mm: 2019-10-12 08:59
-week(ddd / dddd): Sa . Samstag
+week(ddd / dddd): Sa (Samstag)
 ```
 
 <br>
