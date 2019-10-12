@@ -98,6 +98,7 @@ namespace Rextester
             Console.WriteLine("week: " + dt.DayOfWeek);
             Console.WriteLine("week(type): " + dt.DayOfWeek.GetType());
             Console.WriteLine("week(current): " + CultureInfo.CurrentCulture.DateTimeFormat.GetDayName(dt.DayOfWeek));
+            Console.WriteLine("week(current): ddd(dddd): " + dt.ToString("ddd (dddd)"));
             Console.WriteLine("week(zh-tw): " + new CultureInfo("zh-tw").DateTimeFormat.GetDayName(dt.DayOfWeek));
             Console.WriteLine("week(ja-jp): " + new CultureInfo("ja-jp").DateTimeFormat.GetDayName(dt.DayOfWeek));
         }
