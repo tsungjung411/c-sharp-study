@@ -102,6 +102,7 @@ namespace Rextester
 }
 ```
  - [【.NET】利用 CultureInfo 取得各語系星期顯示名稱](https://dotblogs.com.tw/echo/2016/10/16/dotnet_dayofweek_displaybycultureinfo)
+ - [Table of Language Culture Names, Codes, and ISO Values (PIA)](https://docs.microsoft.com/en-us/previous-versions/commerce-server/ee796272(v=cs.20)?redirectedfrom=MSDN)
 
 執行結果：
 ```
@@ -122,3 +123,5 @@ week(ja-jp): 土曜日
 - [how can i get the current time in C#? ](https://stackoverflow.com/questions/10374089/how-can-i-get-the-current-time-in-c)
 - [Parse string to DateTime in C#](https://stackoverflow.com/questions/5366285/parse-string-to-datetime-in-c-sharp)
 - [[dotnet] CultureInfo.InvariantCulture Property](https://docs.microsoft.com/zh-tw/dotnet/api/system.globalization.cultureinfo.invariantculture?view=netframework-4.8)
+ - [【.NET】利用 CultureInfo 取得各語系星期顯示名稱](https://dotblogs.com.tw/echo/2016/10/16/dotnet_dayofweek_displaybycultureinfo)
+ - [Table of Language Culture Names, Codes, and ISO Values (PIA)](https://docs.microsoft.com/en-us/previous-versions/commerce-server/ee796272(v=cs.20)?redirectedfrom=MSDN)
