@@ -176,6 +176,7 @@ namespace Rextester
 ```
  - [【.NET】利用 CultureInfo 取得各語系星期顯示名稱](https://dotblogs.com.tw/echo/2016/10/16/dotnet_dayofweek_displaybycultureinfo)
  - [Table of Language Culture Names, Codes, and ISO Values (PIA)](https://docs.microsoft.com/en-us/previous-versions/commerce-server/ee796272(v=cs.20)?redirectedfrom=MSDN)
+ - [[dotnet] 作法：從特定日期擷取一星期的哪一日](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date)
 
 執行結果：
 ```
