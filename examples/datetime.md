@@ -248,6 +248,38 @@ dt2 > dt1: True
 
 <br>
 
+## System.TimeSpan / Offset
+```C#
+//https://rextester.com/l/csharp_online_compiler
+//Rextester.Program.Main is the entry point for your code. Don't change it.
+//Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
+
+using System;
+using System.Globalization;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            DateTime dt = DateTime.Now;
+            DateTime lastWeek = dt.Subtract(new TimeSpan(7 * TimeSpan.TicksPerDay));
+            Console.WriteLine("Now: {0}", dt);
+            Console.WriteLine("lastWeek: {0}", lastWeek);
+        }
+    }
+}
+```
+
+執行結果：
+```
+Now: 13.10.2019 07:11:19
+lastWeek: 06.10.2019 07:11:19
+```
+
+<br>
+
 ## 參考資料
 - [how can i get the current time in C#? ](https://stackoverflow.com/questions/10374089/how-can-i-get-the-current-time-in-c)
 - [Parse string to DateTime in C#](https://stackoverflow.com/questions/5366285/parse-string-to-datetime-in-c-sharp)
