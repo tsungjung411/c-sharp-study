@@ -21,11 +21,18 @@ namespace Rextester
             set.Add(3);
             set.Add(5);
             
+            Console.Write("set: ");
             // ToList(): defined in Linq
             set.ToList().ForEach(x => Console.Write("{0},", x));
             
             Console.WriteLine();
-            Console.WriteLine(String.Join(",", set));
+            Console.WriteLine("set: " + String.Join(",", set));
+            
+            Console.WriteLine();
+            Console.WriteLine("set.Count: " + set.Count);
+            Console.WriteLine("set.Count(): " + set.Count());
+            Console.WriteLine("set.Contains(2): " + set.Contains(2));
+            Console.WriteLine("set.Contains(2): " + set.Contains(2));
         }
     }
 }
@@ -34,6 +41,11 @@ namespace Rextester
 
 執行結果：
 ```
-5,2,3,
-5,2,3
+set: 5,2,3,
+set: 5,2,3
+
+set.Count: 3
+set.Count(): 3
+set.Contains(2): True
+set.Contains(2): True
 ```
