@@ -11,7 +11,7 @@
 
 <br>
 
-## Now to string
+## Now to string (or by culture)
 ```C#
 //https://rextester.com/l/csharp_online_compiler
 //Rextester.Program.Main is the entry point for your code. Don't change it.
@@ -26,7 +26,7 @@ namespace Rextester
         public static void Main(string[] args)
         {
             Console.WriteLine("Now: " + DateTime.Now);
-            Console.WriteLine("Now.GetType: " + DateTime.Now.GetType());
+            Console.WriteLine("Now.GetType(): " + DateTime.Now.GetType());
             
             Console.WriteLine();
             Console.WriteLine("yyyy-MM-dd HH:mm:ss ddd(dddd) > "
@@ -54,7 +54,7 @@ namespace Rextester
 執行結果：
 ```
 Now: 13.10.2019 08:42:11
-Now.GetType: System.DateTime
+Now.GetType(): System.DateTime
 
 yyyy-MM-dd HH:mm:ss ddd(dddd) > 2019-10-13 08:42:11 So(Sonntag)
 
@@ -72,7 +72,6 @@ yyyy-MM-dd HH:mm:ss ddd(dddd) > 2019-10-13 08:42:11 日(日曜日)
 //Compiler version 4.0.30319.17929 for Microsoft (R) .NET Framework 4.5
 
 using System;
-using System.Globalization;
 
 namespace Rextester
 {
@@ -81,10 +80,11 @@ namespace Rextester
         public static void Main(string[] args)
         {
             Console.WriteLine("Now: " + DateTime.Now);
-            Console.WriteLine("GetType: " + DateTime.Now.GetType());
-            Console.WriteLine("Ticks: " + DateTime.Now.Ticks);
-            Console.WriteLine();
+            Console.WriteLine("Now.GetType(): " + DateTime.Now.GetType());
+            Console.WriteLine("Now.Ticks: " + DateTime.Now.Ticks);
+            Console.WriteLine("Now.Ticks.GetType(): " + DateTime.Now.Ticks.GetType());
             
+            Console.WriteLine();
             DateTime startDate = new DateTime(2019, 10, 10);
             DateTime endDate = new DateTime(2019, 10, 11);
             Int64 diff = (endDate.Ticks - startDate.Ticks) / TimeSpan.TicksPerSecond;
@@ -99,9 +99,11 @@ namespace Rextester
 
 執行結果：
 ```
-Now: 12.10.2019 15:05:39
-GetType: System.DateTime
-Ticks: 637064895390111331
+Now: 13.10.2019 08:53:18
+Now.GetType(): System.DateTime
+Now.Ticks: 637065535984001355
+Now.Ticks.GetType(): System.Int64
+
 startDate.Ticks: 637062624000000000
 endDate.Ticks = 637063488000000000
 endDate - startDate = 86400 (sec.)
