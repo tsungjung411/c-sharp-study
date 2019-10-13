@@ -26,23 +26,41 @@ namespace Rextester
         public static void Main(string[] args)
         {
             Console.WriteLine("Now: " + DateTime.Now);
-            Console.WriteLine("GetType: " + DateTime.Now.GetType());
-            Console.WriteLine("yyyy-MM-dd HH:mm: "
-                              + DateTime.Now.ToString("yyyy-MM-dd HH:mm"));
-            Console.WriteLine("week(ddd / dddd): "
-                              + DateTime.Now.ToString("ddd (dddd)"));
+            Console.WriteLine("Now.GetType: " + DateTime.Now.GetType());
+            
+            Console.WriteLine();
+            Console.WriteLine("yyyy-MM-dd HH:mm:ss ddd(dddd) > "
+                + DateTime.Now.ToString(
+                    "yyyy-MM-dd HH:mm:ss ddd(dddd)"));
+            
+            Console.WriteLine();
+            Console.WriteLine("yyyy-MM-dd HH:mm:ss ddd(dddd) > "
+                + DateTime.Now.ToString(
+                    "yyyy-MM-dd HH:mm:ss ddd(dddd)",
+                    new System.Globalization.CultureInfo("zh-tw")));
+            
+            Console.WriteLine();
+            Console.WriteLine("yyyy-MM-dd HH:mm:ss ddd(dddd) > "
+                + DateTime.Now.ToString(
+                    "yyyy-MM-dd HH:mm:ss ddd(dddd)",
+                    new System.Globalization.CultureInfo("ja-jp")));
         }
     }
 }
 ```
 - [how can i get the current time in C#? ](https://stackoverflow.com/questions/10374089/how-can-i-get-the-current-time-in-c)
+- [DateTime.Now to string by culture](https://social.msdn.microsoft.com/Forums/sqlserver/en-US/31bd2f3c-a99d-4f24-8cb9-3f87d424d1c6/)
 
 執行結果：
 ```
-Now: 12.10.2019 08:08:11
-GetType: System.DateTime
-yyyy-MM-dd HH:mm: 2019-10-12 08:59
-week(ddd / dddd): Sa (Samstag)
+Now: 13.10.2019 08:42:11
+Now.GetType: System.DateTime
+
+yyyy-MM-dd HH:mm:ss ddd(dddd) > 2019-10-13 08:42:11 So(Sonntag)
+
+yyyy-MM-dd HH:mm:ss ddd(dddd) > 2019-10-13 08:42:11 週日(星期日)
+
+yyyy-MM-dd HH:mm:ss ddd(dddd) > 2019-10-13 08:42:11 日(日曜日)
 ```
 
 <br>
@@ -65,6 +83,7 @@ namespace Rextester
             Console.WriteLine("Now: " + DateTime.Now);
             Console.WriteLine("GetType: " + DateTime.Now.GetType());
             Console.WriteLine("Ticks: " + DateTime.Now.Ticks);
+            Console.WriteLine();
             
             DateTime startDate = new DateTime(2019, 10, 10);
             DateTime endDate = new DateTime(2019, 10, 11);
