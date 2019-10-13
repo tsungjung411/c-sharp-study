@@ -75,6 +75,8 @@
       Console.WriteLine("leading zero: " + 123.ToString("D8")); // width:8
       Console.WriteLine("{0:#,###}", 123456789);
       ```
+  - 清單(List)
+    - [Console.WriteLine and generic List](https://stackoverflow.com/questions/52927/console-writeline-and-generic-list)
 - 字串
   - [Add, Remove, Replace String In C#](https://www.c-sharpcorner.com/UploadFile/mahesh/add-remove-replace-strings-in-C-Sharp/)
   - [@ -- 逐字識別項](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/tokens/verbatim?view=netframework-4.8)
