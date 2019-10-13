@@ -49,6 +49,7 @@
       import Sytem.Linq;
       ```
 - 標準輸出
+  - [[dotnet] Console.WriteLine Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.console.writeline?view=netframework-4.8)
   - [[dotnet] String.Format Method](https://docs.microsoft.com/zh-tw/dotnet/api/system.string.format?view=netframework-4.8#Starting)
   - [[dotnet] 複合格式](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/composite-formatting)
   - 字串插補
