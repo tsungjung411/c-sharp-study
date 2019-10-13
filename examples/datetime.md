@@ -271,6 +271,8 @@ namespace Rextester
     }
 }
 ```
+- [[dotnet] TimeSpan Struct](https://docs.microsoft.com/zh-tw/dotnet/api/system.timespan?view=netframework-4.8)
+- [[dotnet] TimeSpan.TicksPerDay Field](https://docs.microsoft.com/zh-tw/dotnet/api/system.timespan.ticksperday?view=netframework-4.8)
 
 執行結果：
 ```
