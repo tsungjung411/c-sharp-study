@@ -96,6 +96,8 @@
 - 時間
   - [how can i get the current time in C#?](https://stackoverflow.com/questions/10374089/how-can-i-get-the-current-time-in-c)
   - [[dotnet] DateTime.Now Property](https://docs.microsoft.com/zh-tw/dotnet/api/system.datetime.now?view=netframework-4.8)
+- 正規表達
+  - [[dotnet] https://docs.microsoft.com/zh-tw/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.8](Regex Class)
 
 ## 比較差異
 - 跟 java 的差別
