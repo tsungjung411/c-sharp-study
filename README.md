@@ -98,6 +98,10 @@
   - [[dotnet] DateTime.Now Property](https://docs.microsoft.com/zh-tw/dotnet/api/system.datetime.now?view=netframework-4.8)
 - 正規表達
   - [[dotnet] https://docs.microsoft.com/zh-tw/dotnet/api/system.text.regularexpressions.regex?view=netframework-4.8](Regex Class)
+- 檔案
+  - [[csharp] 檔案系統和登錄](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/)
+  - [作法：一次一行讀取文字檔 (Visual C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time)
+  - [作法：從文字檔讀取 (C# 程式設計手冊)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file)
 
 ## 比較差異
 - 跟 java 的差別
