@@ -19,7 +19,7 @@ namespace Main
             dumpEncoding(Encoding.Default);
             
             dumpEncoding(Encoding.GetEncoding(
-                Encoding.Default.HeaderName));
+                Encoding.Default.HeaderName)); // or BodyName (both okay)
         }
         
         static void dumpEncoding(Encoding encoding) {
