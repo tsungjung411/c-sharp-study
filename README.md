@@ -105,7 +105,9 @@
   - [作法：一次一行讀取文字檔 (Visual C#)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time)
   - [作法：從文字檔讀取 (C# 程式設計手冊)](https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/file-system/how-to-read-from-a-text-file)
   - [C# Read and Write Text Files](https://www.arclab.com/en/kb/csharp/read-write-text-file-ansi-utf8-unicode.html)
-
+- 類別
+- 列舉
+  - [enum (C# 參考)](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/enum)
 
 ## 比較差異
 - 跟 java 的差別
