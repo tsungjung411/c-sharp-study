@@ -58,6 +58,7 @@
     - [[dotnet] $-字串插補C#](https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/tokens/interpolated?view=netframework-4.8)
   - 數值處理
     - [[dotnet] 標準數值格式字串](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/standard-numeric-format-strings)
+    - [String Format for Double [C#]](http://www.csharp-examples.net/string-format-double/)
     - [[dotnet] 作法：以前置字元零來填補數字](https://docs.microsoft.com/zh-tw/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros)
     - 範例
       ```c#
